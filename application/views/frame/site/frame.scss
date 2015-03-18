@@ -7,6 +7,12 @@
 
 html {
   body {
+    text-align: center;
 
+    .container {
+      display: inline-block;
+      width: $mainWidth;
+      margin: auto 0;
+    }
   }
 }

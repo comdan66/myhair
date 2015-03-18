@@ -1,0 +1,30 @@
+/**
+ * @author      OA Wu <comdan66@gmail.com>
+ * @copyright   Copyright (c) 2015 OA Wu Design
+ */
+
+@import "_oa";
+
+.main_cell_top {
+  background-color: rgba(0, 0, 0, .8);
+  @include split-right(200px);
+  @include border-radius(0 0 3px 3px);
+
+  .l, .r {
+    padding-top: 3px;
+    padding-bottom: 3px;
+    color: rgba(230, 230, 230, .7);
+
+    a {
+      @include a(rgba(230, 230, 230, .8), rgba(230, 230, 230, 1), false);
+    }
+  }
+  .l {
+    text-align: left;
+    padding-left: 10px;
+  }
+  .r {
+    text-align: right;
+    padding-right: 10px;
+  }
+}

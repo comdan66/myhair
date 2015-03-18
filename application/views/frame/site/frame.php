@@ -13,6 +13,9 @@
   <body lang="zh-tw">
     <?php echo isset ($hidden_list) ? $hidden_list : ''; ?>
 
-    <?php echo isset ($content) ? $content : ''; ?>
+    <div class='container'>
+      <?php echo isset ($content) ? $content : ''; ?>
+    </div>
+
   </body>
 </html>

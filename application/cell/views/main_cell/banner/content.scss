@@ -1,0 +1,17 @@
+/**
+ * @author      OA Wu <comdan66@gmail.com>
+ * @copyright   Copyright (c) 2015 OA Wu Design
+ */
+
+@import "_oa";
+
+.main_cell_banner {
+  margin-top: 16px;
+  height: 150px;
+  line-height: 150px;
+  font-size: 50px;
+  color: rgba(50, 50, 50, 0.55);
+  background-color: rgba(255, 255, 255, 1);
+  border: 1px solid rgba(192, 192, 192, 1);
+  @include box-shadow(0 0 10px 0 rgba(192, 192, 192, .3));
+}

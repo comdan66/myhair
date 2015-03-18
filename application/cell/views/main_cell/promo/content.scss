@@ -1,0 +1,118 @@
+/**
+ * @author      OA Wu <comdan66@gmail.com>
+ * @copyright   Copyright (c) 2015 OA Wu Design
+ */
+
+@import "_oa";
+$promoHeight: 360px;
+$promo1Width: 350px;
+$promo2Width: 300px;
+$borderColor: rgba(0, 0, 0, .7);
+$textBgColor: rgba(0, 0, 0, .5);
+
+.main_cell_promo {
+  margin-top: 16px;
+  height: $promoHeight;
+  @include clearfix();
+
+  .promo1, .promo2, .promo3 {
+    position: relative;
+    display: inline-block;
+    float: left;
+    height: 100%;
+    width: calc(100% / 3);
+    overflow: hidden;
+
+    .img {
+      width: 100%;
+      height: 100%;
+    }
+    .text {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      display: inline-block;
+      width: 100%;
+      background-color: $textBgColor;
+      color: rgba(230, 230, 230, .7);
+      text-align: left;
+      padding: 5px 10px;
+
+      font-size: small;
+      @include transition(all .3s);
+    }
+  }
+  .promo1 {
+    width: $promo1Width;
+    background-color: rgba(0, 0, 255, 0.2);
+    border: 1px solid $borderColor;
+    border-width: 2px 1px 2px 2px;
+    &:hover {
+      .text {
+        color: rgba(230, 230, 230, 1);
+      }
+    }
+    .text {
+      padding: 20px 0 0 20px;
+      height: 110px;
+
+      .box {
+        border-left: 2px solid rgba(230, 230, 230, .7);
+        display: inline-block;
+        width: 100%;
+        height: 100%;
+        padding: 0 10px;
+
+        .title {
+          font-weight: bold;
+          font-size: large;
+          margin-bottom: 5px;
+        }
+      }
+    }
+  }
+  .promo2 {
+    width: $promo2Width;
+    background-color: rgba(255, 0, 0, 0.2);
+    @include clearfix();
+
+    .promo2-1, .promo2-2, .promo2-3, .promo2-4 {
+      position: relative;
+      width: $promo2Width / 2;
+      height: $promoHeight / 2;
+      float: left;
+      border: 1px solid $borderColor;
+
+      .text {
+        text-align: center;
+      }
+      &:hover {
+        .text {
+          color: rgba(230, 230, 230, 1);
+        }
+      }
+    }
+    .promo2-1, .promo2-2 {
+      border-top-width: 2px;
+    }
+    .promo2-3, .promo2-4 {
+      border-bottom-width: 2px;
+    }
+  }
+  .promo3 {
+    background-color: rgba(0, 128, 0, 0.2);
+    width: calc(100% - #{$promo1Width} - #{$promo2Width});
+    border: 1px solid $borderColor;
+    border-width: 2px 2px 2px 1px;
+
+    &:hover {
+      .text {
+        color: rgba(230, 230, 230, 1);
+      }
+    }
+    .text {
+      font-size: large;
+      padding: 10px;
+    }
+  }
+}
