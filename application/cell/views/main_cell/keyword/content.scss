@@ -6,7 +6,7 @@
 @import "_oa";
 
 .main_cell_keyword {
-  margin-top: 16px;
+  margin: 32px auto;
   display: inline-block;
   width: 100%;
 
@@ -24,7 +24,7 @@
     .l, .r {
       height: 100%;
       padding-top: 4px;
-      @include background-image(radial-gradient(50% 50%, rgba(245, 245, 245, 1) 0px, transparent 100%));
+      @include background-image(radial-gradient(50% 50%, rgba(255, 255, 255, 1) 0px, transparent 100%));
     }
     .l {
       border-right: 1px dashed rgba(194, 194, 194, 1);

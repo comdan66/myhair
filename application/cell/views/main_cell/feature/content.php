@@ -24,5 +24,5 @@
     </ul>
 
   </div>
-  <div class='r'>q</div>
+  <div class='r'></div>
 </div>

@@ -46,4 +46,12 @@ class Main_cell extends Cell_Controller {
   public function keyword () {
     return $this->setUseCssList (true)->load_view ();
   }
+
+  /* render_cell ('main_cell', 'block9', array ()); */
+  // public function _cache_block9 () {
+  //   return array ('time' => 60 * 60, 'key' => null);
+  // }
+  public function block9 () {
+    return $this->setUseCssList (true)->load_view ();
+  }
 }
